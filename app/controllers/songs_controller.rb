@@ -18,11 +18,11 @@ class SongsController < ApplicationController
   end
 
   def index
-    @genres = Genre.all 
+    @genres = Song.all 
   end
 
   def show
-    @genre = Genre.find(params[:id])
+    @genre = Song.find(params[:id])
   end
   
   private
