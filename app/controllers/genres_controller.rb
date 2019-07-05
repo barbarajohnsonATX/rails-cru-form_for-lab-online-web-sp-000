@@ -22,7 +22,7 @@ class GenresController < ApplicationController
   end
 
   def show
-    @genres = Genre.find(params[:id])
+    @genre = Genre.find(params[:id])
   end
   
   private
