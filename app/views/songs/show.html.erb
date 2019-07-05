@@ -1,2 +1,5 @@
 <h1><%= @song.name %></h1>
+By <a href="/artists/<%= @song.artist.id %>"> <%= @song.artist.name %> </a>
+
+<a href="/genres/<%= @song.genre.id %>"> <%= @song.genre.name %> </a>
 
