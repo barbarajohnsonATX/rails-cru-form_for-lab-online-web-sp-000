@@ -14,7 +14,7 @@ class GenresController < ApplicationController
 
   def update
     @genre = Genre.update(strong_params(:name))
-    redirect_to genre_path(@artist)
+    redirect_to genre_path(@genre)
   end
 
   def index
